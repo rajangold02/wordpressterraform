@@ -17,7 +17,7 @@ resource "aws_elb" "ebizon" {
     interval            = 30
   }
 
-  instances                   = ["${module.ec2.aws_instance.ebizon.id}"]
+  instances                   = ["${modules.ec2.aws_instance.ebizon.id}"]
   cross_zone_load_balancing   = true
   idle_timeout                = 400
   connection_draining         = true

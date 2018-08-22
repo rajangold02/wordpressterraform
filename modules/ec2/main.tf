@@ -8,4 +8,5 @@ resource "aws_instance" "ebizon" {
         tags {
          Name = "ec2-wordpress"
         }
-        user_data = "${file("./wordpress.sh")}"
+        user_data = "${file("./modules/ec2/wordpress.sh")}"
+		}

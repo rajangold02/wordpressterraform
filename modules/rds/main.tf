@@ -1,5 +1,5 @@
 resource "aws_db_instance" "rds" {
-  allocated_storage    = "${var.storage}"
+  allocated_storage    = "30"
   storage_type         = "gp2"
   engine               = "mysql"
   engine_version       = "5.7"
